@@ -47,6 +47,13 @@ O projeto é organizado da seguinte forma:
 - Swing (para a interface gráfica)
 - JPA/Hibernate (para a persistência de dados)
 
+
+# Utilizei o Spring Initializr para a criação do projeto Spring Boot
+     - Abaixo o print :
+
+![0b91361d-ca80-4494-a25e-227f6416d10f](https://github.com/euaisabela/TrabalhoJavaPOO2024/assets/129691258/ceb0cbac-91f6-45c2-8989-d531cecd033e)
+
+
 ## Como Executar
 
 1. Clone o repositório:
