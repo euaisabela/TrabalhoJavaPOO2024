@@ -14,6 +14,12 @@ Este é um projeto de gerenciamento de loja desenvolvido em Java. O sistema perm
 - **Criar Pedido**: Cria um novo pedido para um cliente, associando produtos ao pedido.
 - **Ver Pedidos**: Exibe a lista de pedidos criados.
 
+## Imagem da Frente
+![image](https://github.com/euaisabela/TrabalhoJavaPOO2024/assets/129691258/c1092975-5efd-4f8a-a01b-cdd694836d8c)
+
+
+
+
 ## Estrutura do Projeto
 
 O projeto é organizado da seguinte forma:
