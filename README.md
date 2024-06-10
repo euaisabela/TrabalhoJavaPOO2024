@@ -10,6 +10,7 @@ Este é um projeto de gerenciamento de loja desenvolvido em Java. O sistema perm
 
 - **Cadastrar Produto**: Adiciona um novo produto ao estoque.
 - **Excluir Produto**: Remove um produto do estoque.
+- **Alterar Produto** : Pode alterar o preço ou a quantidade do produto ( escolhido).
 - **Adicionar Cliente**: Cadastra um novo cliente.
 - **Excluir Cliente**: Remove um cliente do sistema.
 - **Ver Produtos em Estoque**: Exibe a lista de produtos disponíveis no estoque.
@@ -35,6 +36,7 @@ O projeto é organizado da seguinte forma:
 - `src/main/java/com/trabalhoestacio/loja_gerenciamento/`
   - `ParteInicial2.java`: Classe principal que inicializa a interface de gerenciamento.
   - `CadastrarProduto.java`: Classe responsável pela interface de cadastro de produtos.
+  - `AlterarProduto.java`: Classe responsável pela interface de edição de produtos( quantidade e preco).
   - `CriarPedido.java`: Classe responsável pela interface de criação de pedidos.
   - `VerPedido.java`: Classe responsável pela interface de visualização de pedidos.
   - `Loja.java`: Classe que gerencia a lógica de negócios, incluindo produtos, clientes e pedidos.
