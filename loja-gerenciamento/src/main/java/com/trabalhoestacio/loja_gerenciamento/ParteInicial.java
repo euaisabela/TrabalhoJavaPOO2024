@@ -26,7 +26,7 @@ public class ParteInicial extends JFrame {
         gbc.weighty = 1.0; // Adiciona um espaço vertical extra
 
         // Adicionando a imagem como logotipo no topo e centralizado
-        ImageIcon logoIcon = new ImageIcon("src/main/java/minhasimagens/Logo.jpg"); // Substitua o caminho com o caminho real da sua imagem
+        ImageIcon logoIcon = new ImageIcon("/minhasimagens/Logo.jpg"); // Substitua o caminho com o caminho real da sua imagem
         JLabel logoLabel = new JLabel(logoIcon);
         loginPanel.add(logoLabel, gbc);
 
