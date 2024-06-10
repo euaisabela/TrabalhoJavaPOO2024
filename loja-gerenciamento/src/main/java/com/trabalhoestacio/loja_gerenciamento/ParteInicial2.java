@@ -9,11 +9,10 @@ import java.awt.event.ActionListener;
 
 public class ParteInicial2 extends JFrame {
 
-    private Loja loja;
+   
 
     public ParteInicial2(Loja loja) {
         super("Gerenciamento da Loja");
-        this.loja = loja;
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 400); // Aumentando o tamanho da janela
@@ -60,6 +59,7 @@ public class ParteInicial2 extends JFrame {
 
         JButton cadastrarProdutoButton = new JButton("Cadastrar Produto");
         JButton excluirProdutoButton = new JButton("Excluir Produto");
+        JButton alterarProdutoButton = new JButton("Alterar Produto");
         JButton adicionarClienteButton = new JButton("Adicionar Cliente");
         JButton excluirClienteButton = new JButton("Excluir Cliente");
         JButton verProdutosButton = new JButton("Ver Produtos em Estoque");
@@ -74,6 +74,7 @@ public class ParteInicial2 extends JFrame {
         JButtonStyle.setButtonStyle(verProdutosButton);
         JButtonStyle.setButtonStyle(criarPedidoButton);
         JButtonStyle.setButtonStyle(verPedidosButton);
+        JButtonStyle.setButtonStyle(alterarProdutoButton);
 
         cadastrarProdutoButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -84,6 +85,12 @@ public class ParteInicial2 extends JFrame {
         excluirProdutoButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new ExcluirProduto(loja).setVisible(true);
+            }
+        });
+
+       alterarProdutoButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new AlterarProduto(loja).setVisible(true);
             }
         });
 
@@ -127,6 +134,8 @@ public class ParteInicial2 extends JFrame {
         buttonPanel.add(cadastrarProdutoButton, gbc);
         gbc.gridy++;
         buttonPanel.add(excluirProdutoButton, gbc);
+        gbc.gridy++;
+        buttonPanel.add(alterarProdutoButton, gbc);
         gbc.gridy++;
         buttonPanel.add(adicionarClienteButton, gbc);
         gbc.gridy++;
