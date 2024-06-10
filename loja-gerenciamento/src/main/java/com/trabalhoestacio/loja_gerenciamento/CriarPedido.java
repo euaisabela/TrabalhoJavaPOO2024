@@ -9,12 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CriarPedido extends JFrame {
-    private Loja loja;
+
 
     public CriarPedido(Loja loja) {
         super("Criar Pedido");
-        this.loja = loja;
-
+        
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(400, 300);
         setLocationRelativeTo(null);
@@ -44,25 +43,34 @@ public class CriarPedido extends JFrame {
                 }
 
                 List<Produto> produtosPedido = new ArrayList<>();
-                for (int i = 0; i < quantidade; i++) {
-                    Produto produto = loja.getProdutoPorNome(JOptionPane.showInputDialog("Nome do produto " + (i + 1) + ":"));
+              
+                    Produto produto = loja.getProdutoPorNome(JOptionPane.showInputDialog("Nome do produto:"));
                     if (produto != null) {
                         produtosPedido.add(produto);
                     } else {
                         JOptionPane.showMessageDialog(CriarPedido.this, "Produto não encontrado.");
                         return;
                     }
+
+                int estoque = produto.getQuantidadeEmEstoque();
+
+                if(quantidade > estoque){
+                    JOptionPane.showMessageDialog(CriarPedido.this,"Quantidade não disponível.");
+                }else{
+                    estoque = estoque - quantidade;
+                    produto.setQuantidadeEmEstoque(estoque);
+
+                    Pedido pedido = new Pedido();
+                    pedido.setCliente(cliente);
+                    pedido.setProdutos(produtosPedido);
+                    pedido.setQuantidade(quantidade);
+                    pedido.setDataPedido(LocalDate.now());
+    
+                    loja.criarPedido(pedido);
+    
+                    JOptionPane.showMessageDialog(CriarPedido.this, "Pedido criado com sucesso!");
+                    dispose();
                 }
-
-                Pedido pedido = new Pedido();
-                pedido.setCliente(cliente);
-                pedido.setProdutos(produtosPedido);
-                pedido.setDataPedido(LocalDate.now());
-
-                loja.criarPedido(pedido);
-
-                JOptionPane.showMessageDialog(CriarPedido.this, "Pedido criado com sucesso!");
-                dispose();
             }
         });
 
