@@ -8,7 +8,7 @@ import java.util.List;
 public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @ManyToOne
     private Cliente cliente;
@@ -18,14 +18,25 @@ public class Pedido {
 
     private LocalDate dataPedido;
 
+    @OneToOne
+    private int Quantidade;
+
     public Pedido() {
     }
 
-    public Long getId() {
+    public int getQuantidade(){
+        return Quantidade;
+    }
+
+    public void setQuantidade(int quantidade){
+        this.Quantidade = quantidade;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
