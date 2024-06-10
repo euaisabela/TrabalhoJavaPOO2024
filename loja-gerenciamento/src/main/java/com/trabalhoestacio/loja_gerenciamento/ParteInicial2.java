@@ -34,10 +34,11 @@ public class ParteInicial2 extends JFrame {
         headerPanel.setBackground(Color.WHITE);
 
         // Adicionando a imagem de cabeçalho
-        ImageIcon headerIcon = new ImageIcon("src/main/java/minhasimagens/headervintage.png");
+        //ImageIcon headerIcon = new ImageIcon("src/main/java/minhasimagens/headervintage.png"); teste
+        ImageIcon headerIcon = new ImageIcon("loja-gerenciamento/src/main/java/minhasimagens/headervintage.png");
         JLabel headerLabel = new JLabel(headerIcon);
         headerLabel.setAlignmentX(Component.CENTER_ALIGNMENT); // Centralizar a imagem
-
+      
         // Adicionando a frase de boas-vindas
         JLabel welcomeLabel = new JLabel("Bem-vindo ao Sistema de Gerenciamento da Loja");
         welcomeLabel.setFont(new Font("Serif", Font.BOLD, 18));
