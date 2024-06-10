@@ -44,6 +44,11 @@ public class Loja {
         produtos.remove(produto);
     }
 
+    public void alterarProduto(Produto produto, double preco, int quantidade) {
+        produto.setPreco(preco);
+        produto.setQuantidadeEmEstoque(quantidade);
+    }
+
     public Produto getProdutoPorNome(String nome) {
         for (Produto produto : produtos) {
             if (produto.getNome().equals(nome)) {
@@ -51,6 +56,15 @@ public class Loja {
             }
         }
         return null;
+    }
+
+    public int getquantidade(String nome) {
+        for (Produto produto : produtos) {
+            if (produto.getNome().equals(nome)) {
+                return produto.getQuantidadeEmEstoque();
+            }
+        }
+        return 0;
     }
 
     public void adicionarCliente(Cliente cliente) {
