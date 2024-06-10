@@ -21,8 +21,7 @@ Este é um projeto de gerenciamento de loja desenvolvido em Java. O sistema perm
 
 ![image](https://github.com/euaisabela/TrabalhoJavaPOO2024/assets/129691258/cec1fdd1-d1d1-4887-8d41-049cfd23e3ef)
 
-![image](https://github.com/euaisabela/TrabalhoJavaPOO2024/assets/129691258/d7318a85-d68e-4b6e-bf5a-560ca650d433)
-
+![image](https://github.com/euaisabela/TrabalhoJavaPOO2024/assets/129691258/f674cc2b-f315-4488-b981-e51ce72b2822)
 
 
 
