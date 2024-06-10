@@ -8,11 +8,10 @@ import java.awt.event.ActionListener;
 
 public class CadastrarProduto extends JFrame {
 
-    private Loja loja;
+    
 
     public CadastrarProduto(Loja loja) {
         super("Cadastrar Produto");
-        this.loja = loja;
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(400, 200);
