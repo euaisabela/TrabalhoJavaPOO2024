@@ -1,6 +1,7 @@
 # TrabalhoJavaPOO2024
-Trabalho Faculdade Estácio Programação Orientada a Objetos em Java.
-DA MATERIA ORIENTADO A OBJETO EM JAVA, pelo professor RAPHAAEL JESUS.
+Trabalho Faculdade Estácio 
+Matéria: Programação Orientada a Objetos em Java.
+Professor RAPHAAEL JESUS.
 # Loja de Gerenciamento
 
 Este é um projeto de gerenciamento de loja desenvolvido em Java. O sistema permite cadastrar, excluir e visualizar produtos e clientes, além de criar e visualizar pedidos.
