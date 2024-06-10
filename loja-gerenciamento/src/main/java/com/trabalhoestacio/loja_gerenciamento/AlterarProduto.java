@@ -26,8 +26,8 @@ public class AlterarProduto extends JFrame {
         JScrollPane scrollPane = new JScrollPane(productList);
         JPanel panel = new JPanel(new BorderLayout());
 
-        JButton deleteButton = new JButton("Alterar");
-        deleteButton.addActionListener(new ActionListener() {
+        JButton altButton = new JButton("Alterar");
+        altButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String selectedProduct = productList.getSelectedValue();
                 if (selectedProduct != null) {
@@ -52,7 +52,7 @@ public class AlterarProduto extends JFrame {
 
         panel.add(messageLabel, BorderLayout.NORTH);
         panel.add(scrollPane, BorderLayout.CENTER);
-        panel.add(deleteButton, BorderLayout.SOUTH);
+        panel.add(altButton, BorderLayout.SOUTH);
 
         getContentPane().add(panel);
 
