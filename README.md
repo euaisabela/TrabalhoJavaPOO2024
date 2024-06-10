@@ -49,6 +49,7 @@ O projeto é organizado da seguinte forma:
 - Java
 - Swing (para a interface gráfica)
 - JPA/Hibernate (para a persistência de dados)
+- SQLite
 
 
 # Utilizei o Spring Initializr para a criação do projeto Spring Boot
@@ -61,4 +62,6 @@ O projeto é organizado da seguinte forma:
 
 1. Clone o repositório:
    ```bash
+Copiar a chave SSH 
+Exemplo:
    git clone https://github.com/seu-usuario/loja-gerenciamento.git
